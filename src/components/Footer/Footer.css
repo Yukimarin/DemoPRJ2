@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    background-color: #1B4EA0;
+    color: white;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.top .text {
+    text-align: right;
+    padding: 1% 2% 1% 5%;
+}
+
+.top form {
+    text-align: left;
+    padding: 4% 5%;
+}
+
+.top form input {
+    width: 500px;
+}
+
+.main img {
+    width: 12.5%;
+}
+
+.bottom {
+    background-color: azure;
+    text-align: center;
+    font-size: x-large;
+}
