@@ -38,6 +38,16 @@ function LoginPage() {
     console.log(user);
     if (user) {
       // Login successful, you can perform further actions here
+      axios
+        .patch(`http://localhost:8000/users/${user.id}`, {
+          isLogin: true,
+        })
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
       console.log("Đăng nhập thành công:", user);
       navigate("/");
     } else {

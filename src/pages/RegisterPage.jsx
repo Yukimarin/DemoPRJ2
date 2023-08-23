@@ -18,11 +18,14 @@ function RegisterPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:8000/users", user)
+      .post("http://localhost:8000/users", {
+        username: user.username,
+        email: user.email,
+        password: user.password,
+        isLogin: false,
+      })
       .then((response) => {
-        // Assume the API responds with success
         console.log("Đăng ký thành công:", response.data);
-        // Redirect to the login page
         navigate("/login");
       })
       .catch((error) => {

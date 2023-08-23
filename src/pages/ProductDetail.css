@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .product-img {
+    width: 50%;
+    border: 1px solid red;
+}
+
+.product-img img {
+    width: 500px;
+    height: 500px;
+}
+
+.container .product-content {
+    width: 50%;
+    border: 1px solid blue
+}
