@@ -48,6 +48,7 @@ function LoginPage() {
         .catch((err) => {
           console.error(err);
         });
+      localStorage.setItem("isLoginId", user.id);
       console.log("Đăng nhập thành công:", user);
       navigate("/");
     } else {
